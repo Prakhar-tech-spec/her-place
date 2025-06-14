@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -66,29 +65,31 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="relative flex-1 w-full [background-color:#aec3c3] py-2 px-0 md:py-3 md:px-0 lg:py-4 lg:px-0 rounded-b-2xl overflow-hidden">
+      <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
         <span
           className="
             absolute
-            top-6 left-0 right-0
-            w-full
+            top-1/2
+            left-1/2
+            -translate-x-1/2
+            -translate-y-1/2
             font-bricolage
             text-white
             font-extrabold
             uppercase
             pointer-events-none
             select-none
-            text-[17vw] md:text-[11vw] lg:text-[8vw] xl:text-[7vw] 2xl:text-[6vw]
-            leading-[0.93]
-            text-center
             z-10
             whitespace-nowrap
-            overflow-visible
+            w-[101vw]    /* allow a little overspill */
+            text-[18vw] md:text-[11.5vw] lg:text-[8vw] xl:text-[6.8vw] 2xl:text-[5.8vw]
+            leading-[0.88]
+            tracking-[-0.07em]
+            text-center
           "
           style={{
-            letterSpacing: "-0.045em",
-            paddingLeft: 0,
-            paddingRight: 0,
+            // ensure max width, prevent unwanted cropping
+            maxWidth: "100vw",
           }}
         >
           FREELANCER
