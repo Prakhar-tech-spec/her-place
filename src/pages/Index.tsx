@@ -72,22 +72,22 @@ const Index = () => {
             text-white
             font-extrabold
             w-full
-            text-[15vw] md:text-[9vw] lg:text-[7vw]
-            leading-[0.96] md:leading-[0.93] lg:leading-[0.91]
-            tracking-[0em]
+            text-[22vw] md:text-[16vw] lg:text-[13vw] xl:text-[11vw] 2xl:text-[10vw]
+            leading-[0.92]
+            tracking-[-0.04em]
             uppercase
-            px-0 md:px-[6vw] lg:px-[10vw]
+            px-0
             pt-5 md:pt-7 lg:pt-9
             text-center
             whitespace-nowrap
             select-none
             pointer-events-none
             z-10
-            scale-x-125 md:scale-x-140 lg:scale-x-150
+            scale-x-[1.38] md:scale-x-[1.48] lg:scale-x-[1.59]
             origin-left
           "
           style={{
-            transform: 'scaleX(1.23)',
+            transform: "scaleX(1.38)",
           }}
         >
           FREELANCE
