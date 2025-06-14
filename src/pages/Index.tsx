@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -69,21 +70,24 @@ const Index = () => {
         <span
           className="
             absolute
-            top-5
-            left-0
-            right-0
-            w-screen
-            text-black
+            top-5 left-0 right-0
+            w-full
+            font-bricolage
+            text-white
             font-extrabold
             uppercase
             pointer-events-none
             select-none
-            text-[18vw] md:text-[13vw] lg:text-[10vw] xl:text-[9vw] 2xl:text-[8vw]
-            leading-[0.97]
+            text-[19vw] md:text-[13vw] lg:text-[10vw] xl:text-[9vw] 2xl:text-[8vw]
+            leading-[0.98]
             text-center
             z-10
-            overflow-visible
-            "
+            whitespace-nowrap
+          "
+          style={{
+            // Remove scaling so the text is not cut, make sure it fits fully
+            letterSpacing: "-0.025em",
+          }}
         >
           FREELANCER
         </span>
@@ -94,3 +98,4 @@ const Index = () => {
 };
 
 export default Index;
+
