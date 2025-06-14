@@ -66,11 +66,11 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="relative flex-1 w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 rounded-b-2xl overflow-hidden">
+      <div className="relative flex-1 w-full [background-color:#aec3c3] py-2 px-0 md:py-3 md:px-0 lg:py-4 lg:px-0 rounded-b-2xl overflow-hidden">
         <span
           className="
             absolute
-            top-5 left-0 right-0
+            top-6 left-0 right-0
             w-full
             font-bricolage
             text-white
@@ -78,15 +78,17 @@ const Index = () => {
             uppercase
             pointer-events-none
             select-none
-            text-[19vw] md:text-[13vw] lg:text-[10vw] xl:text-[9vw] 2xl:text-[8vw]
-            leading-[0.98]
+            text-[17vw] md:text-[11vw] lg:text-[8vw] xl:text-[7vw] 2xl:text-[6vw]
+            leading-[0.93]
             text-center
             z-10
             whitespace-nowrap
+            overflow-visible
           "
           style={{
-            // Remove scaling so the text is not cut, make sure it fits fully
-            letterSpacing: "-0.025em",
+            letterSpacing: "-0.045em",
+            paddingLeft: 0,
+            paddingRight: 0,
           }}
         >
           FREELANCER
@@ -98,4 +100,3 @@ const Index = () => {
 };
 
 export default Index;
-
