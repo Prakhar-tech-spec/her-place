@@ -13,7 +13,7 @@ const Index = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="min-h-screen bg-white flex flex-col w-full py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 border-4 border-white rounded-2xl transition-all duration-300">
+    <div className="min-h-screen bg-white flex flex-col w-full py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 border-4 border-white rounded-2xl transition-all duration-300 overflow-hidden">
       {/* Top navigation bar */}
       <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between relative w-full">
@@ -65,32 +65,27 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl relative">
+      <div className="relative flex-1 w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 rounded-b-2xl overflow-hidden">
         <span
           className="
-            absolute top-0 left-0 right-0
-            text-white
+            absolute
+            top-5
+            left-0
+            right-0
+            w-screen
+            text-black
             font-extrabold
-            w-full
-            text-[22vw] md:text-[16vw] lg:text-[13vw] xl:text-[11vw] 2xl:text-[10vw]
-            leading-[0.92]
-            tracking-[-0.04em]
             uppercase
-            px-0
-            pt-5 md:pt-7 lg:pt-9
-            text-center
-            whitespace-nowrap
-            select-none
             pointer-events-none
+            select-none
+            text-[18vw] md:text-[13vw] lg:text-[10vw] xl:text-[9vw] 2xl:text-[8vw]
+            leading-[0.97]
+            text-center
             z-10
-            scale-x-[1.38] md:scale-x-[1.48] lg:scale-x-[1.59]
-            origin-left
-          "
-          style={{
-            transform: "scaleX(1.38)",
-          }}
+            overflow-visible
+            "
         >
-          FREELANCE
+          FREELANCER
         </span>
       </div>
       {/* The rest of the page remains a white canvas */}
