@@ -66,34 +66,30 @@ const Index = () => {
       </div>
       {/* Secondary container fills the remaining visible screen */}
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        <span
-          className="
-            absolute
-            top-1/2
-            left-1/2
-            -translate-x-1/2
-            -translate-y-1/2
-            font-bricolage
-            text-white
-            font-extrabold
-            uppercase
-            pointer-events-none
-            select-none
-            z-10
-            whitespace-nowrap
-            w-[101vw]    /* allow a little overspill */
-            text-[18vw] md:text-[11.5vw] lg:text-[8vw] xl:text-[6.8vw] 2xl:text-[5.8vw]
-            leading-[0.88]
-            tracking-[-0.07em]
-            text-center
-          "
-          style={{
-            // ensure max width, prevent unwanted cropping
-            maxWidth: "100vw",
-          }}
-        >
-          FREELANCER
-        </span>
+        <div className="relative w-full h-full flex items-center justify-center overflow-visible">
+          <span
+            className="
+              font-bricolage
+              text-white
+              font-extrabold
+              uppercase
+              pointer-events-none
+              select-none
+              z-10
+              whitespace-nowrap
+              w-[101vw]
+              text-[18vw] md:text-[11.5vw] lg:text-[8vw] xl:text-[6.8vw] 2xl:text-[5.8vw]
+              leading-[0.88]
+              tracking-[-0.07em]
+              text-center
+            "
+            style={{
+              maxWidth: "100vw",
+            }}
+          >
+            FREELANCE
+          </span>
+        </div>
       </div>
       {/* The rest of the page remains a white canvas */}
     </div>
