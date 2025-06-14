@@ -76,7 +76,7 @@ const Index = () => {
         {/* "FREELANCE" spanning full width with enhanced responsiveness */}
         <div className="w-full flex flex-col pt-12 md:pt-16 lg:pt-20">
           {/* Full width container for FREELANCE text */}
-          <div className="w-full flex items-center min-h-[200px] sm:min-h-[250px] md:min-h-[300px] lg:min-h-[350px] xl:min-h-[400px] px-0 relative overflow-hidden">
+          <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8 relative">
             {/* "FREELANCE" text stretches to fill entire width */}
             <div className="w-full overflow-hidden">
               <span
@@ -90,19 +90,18 @@ const Index = () => {
                   z-10
                   block
                   text-left
-                  leading-none
+                  leading-tight
                   w-full
                 "
                 style={{
-                  fontSize: "clamp(3rem, 22vw, 20rem)",
-                  lineHeight: 0.85,
+                  fontSize: "clamp(2.5rem, 18vw, 12rem)",
+                  lineHeight: 0.95,
                   fontWeight: 900,
-                  letterSpacing: "clamp(-0.08em, -0.03em, 0em)",
+                  letterSpacing: "clamp(-0.05em, -0.02em, 0em)",
                   textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
                   width: "100%",
-                  transform: "scaleX(clamp(1.2, 1.5, 1.8))",
+                  transform: "scaleX(clamp(1.1, 1.3, 1.4))",
                   transformOrigin: "left center",
-                  whiteSpace: "nowrap",
                 }}
               >
                 FREELANCE
@@ -110,11 +109,11 @@ const Index = () => {
             </div>
             
             {/* Woman with laptop image positioned on the right side */}
-            <div className="absolute right-2 sm:right-4 md:right-8 lg:right-12 top-1/2 transform -translate-y-1/2 z-20">
+            <div className="absolute right-4 md:right-8 lg:right-12 top-1/2 transform -translate-y-1/2 z-20">
               <img 
                 src="/lovable-uploads/70ff0b38-73ba-4b64-adaf-26cb0d9b84a9.png"
                 alt="Woman working on laptop"
-                className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px] lg:w-[380px] lg:h-[380px] xl:w-[450px] xl:h-[450px] 2xl:w-[500px] 2xl:h-[500px] object-contain"
+                className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] object-contain"
               />
             </div>
           </div>
