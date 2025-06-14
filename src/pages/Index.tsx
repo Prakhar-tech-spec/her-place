@@ -1,65 +1,75 @@
 
 import { Button } from "@/components/ui/button";
+import NavLinks from "@/components/NavLinks";
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import React from "react";
 
 const Index = () => {
+  // State for controlling mobile nav drawer
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <div className="min-h-screen bg-white flex flex-col px-[10px] py-[10px]">
-      {/* Top container with navigation bar */}
-      <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl mx-0">
-        <nav className="flex items-center justify-between relative">
+    <div className="min-h-screen bg-white flex flex-col px-0 py-0 w-full">
+      {/* Top navigation bar */}
+      <div className="w-full [background-color:#aec3c3] py-3 px-4 md:py-4 md:px-8 shadow rounded-t-2xl mx-0">
+        <nav className="flex items-center justify-between relative w-full">
           {/* Logo or Brand Name */}
-          <span className="text-xl font-bold text-black drop-shadow-sm">
+          <span className="text-xl md:text-2xl font-bold text-black drop-shadow-sm">
             HerPlace
           </span>
-          {/* Navigation Links - centered in a container with Bricolage Grotesque font */}
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex font-bricolage">
-            <ul className="flex space-x-8">
-              <li>
-                <a href="#" className="text-black font-normal hover:underline">
-                  Find freelancers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-black font-normal hover:underline">
-                  Find Jobs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-black font-normal hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-black font-normal hover:underline">
-                  Solutions
-                </a>
-              </li>
-            </ul>
+
+          {/* Desktop navigation links */}
+          <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <NavLinks />
           </div>
-          {/* Right side buttons */}
-          <div className="flex items-center space-x-4">
+
+          {/* Right side buttons (always visible, spacing adapts for screens) */}
+          <div className="flex items-center gap-2 md:gap-4">
             <Button
               variant="outline"
-              className="border border-black text-black font-medium px-4 py-2 rounded-full text-base shadow-none bg-[#aec3c3] transition-colors duration-200 hover:bg-black hover:text-white"
+              className="border border-black text-black font-medium px-5 py-2 md:px-6 md:py-2.5 rounded-full text-base md:text-lg shadow-none bg-[#aec3c3] transition-colors duration-200 hover:bg-black hover:text-white"
             >
               Log in
             </Button>
             <Button
               variant="default"
-              className="bg-black text-white font-semibold px-4 py-2 rounded-full text-base border border-black transition-colors duration-200 hover:bg-[#aec3c3] hover:text-black hover:border-black"
-              style={{}}
+              className="bg-black text-white font-semibold px-5 py-2 md:px-6 md:py-2.5 rounded-full text-base md:text-lg border border-black transition-colors duration-200 hover:bg-[#aec3c3] hover:text-black hover:border-black"
             >
               Join us
             </Button>
+
+            {/* Mobile: Hamburger menu button */}
+            <div className="flex md:hidden">
+              <Sheet open={open} onOpenChange={setOpen}>
+                <SheetTrigger asChild>
+                  <button
+                    aria-label="Open main menu"
+                    className="ml-2 p-2 rounded-full hover:bg-black/10 transition"
+                  >
+                    <Menu size={28} />
+                  </button>
+                </SheetTrigger>
+                <SheetContent side="top" className="p-0 min-h-[210px] bg-[#aec3c3]">
+                  {/* Mobile nav links, close on click */}
+                  <div className="flex flex-col items-center pt-6 gap-3">
+                    <NavLinks onClick={() => setOpen(false)} />
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] px-8 flex-1 rounded-none"></div>
+      <div className="w-full [background-color:#aec3c3] px-2 md:px-8 flex-1 rounded-none"></div>
       {/* The rest of the page remains a white canvas */}
     </div>
   );
 };
 
 export default Index;
-
