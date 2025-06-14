@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -19,7 +18,7 @@ const Index = () => {
       <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between relative w-full">
           {/* Logo or Brand Name */}
-          <span className="text-xl md:text-2xl font-bold text-black drop-shadow-sm">
+          <span className="text-xl md:text-2xl font-bold text-black drop-shadow-sm ml-4 md:ml-8">
             HerPlace
           </span>
 
