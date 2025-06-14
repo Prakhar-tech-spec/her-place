@@ -1,6 +1,7 @@
 
 const Index = () => {
-  return <div className="min-h-screen bg-white px-[10px] py-[10px]">
+  return (
+    <div className="min-h-screen bg-white flex flex-col px-[10px] py-[10px]">
       {/* Top container with navigation bar */}
       <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between">
@@ -26,9 +27,10 @@ const Index = () => {
           </ul>
         </nav>
       </div>
-      {/* Secondary container, same color, under navigation bar, with increased height */}
-      <div className="w-full [background-color:#aec3c3] py-20 px-8 rounded-none"></div>
+      {/* Secondary container fills the remaining visible screen */}
+      <div className="w-full [background-color:#aec3c3] px-8 flex-1 rounded-none"></div>
       {/* The rest of the page remains a white canvas */}
-    </div>;
+    </div>
+  );
 };
 export default Index;
