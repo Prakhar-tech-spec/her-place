@@ -73,47 +73,12 @@ const Index = () => {
         </nav>
       </div>
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        {/* "FREELANCE" aligned under nav's columns */}
-        <div
-          className="
-            w-full flex flex-col"
-        >
-          {/* Responsive container aligns with nav's left and right columns */}
-          <div
-            className="
-              mx-0 sm:mx-0
-              flex items-center
-              h-[min(21vw,204px)] md:h-[min(13vw,148px)] xl:h-[min(9vw,110px)]
-              "
-            style={{
-              // Match the left of the logo (ml-4 md:ml-8)
-              marginLeft: "1rem",
-              marginRight: "0",
-              // On md and up, match larger margin
-              ...(window.innerWidth >= 768 && { marginLeft: "2rem" }),
-              // For right, squeeze to match Join us button edge
-              maxWidth: "100%",
-              // We'll use an inner div for the precise text alignment
-            }}
-          >
-            {/* "FREELANCE" text stretches to fill, but not wider than nav's content area */}
-            <div
-              className="relative w-full"
-              style={{
-                // The right side — [Join us] padding: px-6 … md:px-7; the nav has pr-2/pr-4 too.
-                // So, subtract from 100vw:
-                //  - left margin to logo (1/2rem)
-                //  - right space (button px, nav's pr, etc.)
-                // Approximate: on md, ml-8 (2rem), nav pr-4 (1rem).
-                // Nudge until the "E" of "FREELANCE" sits below "s" of "Join us".
-                maxWidth: "calc(100vw - 2rem - 8.5rem)", // 2rem (ml-8) + "Join us"/button group width guess (~8.5rem)
-                // On mobile, use smaller guess
-                ...(window.innerWidth < 768
-                  ? { maxWidth: "calc(100vw - 1rem - 7rem)" }
-                  : {}),
-                height: "100%",
-              }}
-            >
+        {/* "FREELANCE" spanning full width */}
+        <div className="w-full flex flex-col">
+          {/* Full width container for FREELANCE text */}
+          <div className="w-full flex items-center h-[min(21vw,204px)] md:h-[min(13vw,148px)] xl:h-[min(9vw,110px)] px-4 md:px-8">
+            {/* "FREELANCE" text stretches to fill entire width */}
+            <div className="w-full">
               <span
                 className="
                   font-bricolage
@@ -126,15 +91,17 @@ const Index = () => {
                   block
                   text-left
                   leading-tight
+                  w-full
                 "
                 style={{
-                  fontSize: "clamp(2.2rem, 16vw, 9.6rem)",
+                  fontSize: "clamp(3rem, 20vw, 12rem)",
                   lineHeight: 0.98,
                   fontWeight: 900,
-                  letterSpacing: "-0.065em",
-                  width: "100%",
+                  letterSpacing: "-0.02em",
                   textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
-                  whiteSpace: "nowrap",
+                  width: "100%",
+                  transform: "scaleX(1.2)",
+                  transformOrigin: "left center",
                 }}
               >
                 FREELANCE
