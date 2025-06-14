@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -37,13 +36,16 @@ const Index = () => {
             <Button
               variant="outline"
               style={{ backgroundColor: "#aec3c3" }}
-              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none hover:shadow-lg hover:bg-[#aec3c3]"
+              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none transition-colors duration-200
+                hover:bg-black hover:text-white"
             >
               Log in
             </Button>
             <Button
               variant="default"
-              className="bg-black text-white font-semibold px-7 py-2 rounded-full text-lg hover:bg-black/90"
+              className="bg-black text-white font-semibold px-7 py-2 rounded-full text-lg border border-black transition-colors duration-200
+                hover:bg-[#aec3c3] hover:text-black hover:border-black"
+              style={{}}
             >
               Join us
             </Button>
@@ -56,4 +58,5 @@ const Index = () => {
     </div>
   );
 };
+
 export default Index;
