@@ -1,3 +1,4 @@
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col px-[10px] py-[10px]">
@@ -5,26 +6,26 @@ const Index = () => {
       <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between relative">
           {/* Logo or Brand Name */}
-          <span className="text-xl font-bold text-white drop-shadow-sm">MyApp</span>
+          <span className="text-xl font-normal text-black drop-shadow-sm">MyApp</span>
           {/* Navigation Links - centered */}
           <ul className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-8">
             <li>
-              <a href="#" className="text-white font-medium hover:underline">
+              <a href="#" className="text-black font-normal hover:underline">
                 Find freelancers
               </a>
             </li>
             <li>
-              <a href="#" className="text-white font-medium hover:underline">
+              <a href="#" className="text-black font-normal hover:underline">
                 Find Jobs
               </a>
             </li>
             <li>
-              <a href="#" className="text-white font-medium hover:underline">
+              <a href="#" className="text-black font-normal hover:underline">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="text-white font-medium hover:underline">
+              <a href="#" className="text-black font-normal hover:underline">
                 Solutions
               </a>
             </li>
