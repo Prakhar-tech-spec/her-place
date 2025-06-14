@@ -74,9 +74,9 @@ const Index = () => {
       </div>
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
         {/* "FREELANCE" spanning full width with enhanced responsiveness */}
-        <div className="w-full flex flex-col pt-8 md:pt-12 lg:pt-16">
+        <div className="w-full flex flex-col pt-12 md:pt-16 lg:pt-20">
           {/* Full width container for FREELANCE text */}
-          <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8">
+          <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8 relative">
             {/* "FREELANCE" text stretches to fill entire width */}
             <div className="w-full overflow-hidden">
               <span
@@ -106,6 +106,15 @@ const Index = () => {
               >
                 FREELANCE
               </span>
+            </div>
+            
+            {/* Woman with laptop image positioned on the right side */}
+            <div className="absolute right-4 md:right-8 lg:right-12 top-1/2 transform -translate-y-1/2 z-20">
+              <img 
+                src="/lovable-uploads/70ff0b38-73ba-4b64-adaf-26cb0d9b84a9.png"
+                alt="Woman working on laptop"
+                className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] object-contain"
+              />
             </div>
           </div>
         </div>
