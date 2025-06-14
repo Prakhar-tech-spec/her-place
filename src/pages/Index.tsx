@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -66,34 +65,29 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl relative overflow-x-visible">
+      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl relative">
         <span
           className="
-            absolute
-            top-8 md:top-12 lg:top-16
-            left-0
-            w-screen
+            absolute top-0 left-0 right-0
             text-white
             font-extrabold
-            text-[18vw] md:text-[12vw] lg:text-[10vw] xl:text-[8vw] 2xl:text-[7.25vw]
-            leading-[0.88]
+            w-full
+            text-[22vw] md:text-[16vw] lg:text-[13vw] xl:text-[11vw] 2xl:text-[10vw]
+            leading-[0.92]
             tracking-[-0.04em]
             uppercase
             px-0
-            text-left
+            pt-5 md:pt-7 lg:pt-9
+            text-center
             whitespace-nowrap
             select-none
             pointer-events-none
-            z-20
-            scale-x-[1.20] md:scale-x-[1.34] lg:scale-x-[1.44]
+            z-10
+            scale-x-[1.38] md:scale-x-[1.48] lg:scale-x-[1.59]
             origin-left
-            overflow-x-visible
           "
           style={{
-            left: 0,
-            right: 0,
-            width: "100vw",
-            transform: "scaleX(1.2)",    // or adjust to 1.1/1.15 if needed!
+            transform: "scaleX(1.38)",
           }}
         >
           FREELANCE
@@ -105,4 +99,3 @@ const Index = () => {
 };
 
 export default Index;
-
