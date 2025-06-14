@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -35,9 +36,7 @@ const Index = () => {
           <div className="flex items-center space-x-4">
             <Button
               variant="outline"
-              style={{ backgroundColor: "#aec3c3" }}
-              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none transition-colors duration-200
-                hover:bg-black hover:text-white"
+              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none bg-[#aec3c3] transition-colors duration-200 hover:bg-black hover:text-white"
             >
               Log in
             </Button>
