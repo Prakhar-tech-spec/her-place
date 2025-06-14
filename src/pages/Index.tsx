@@ -36,8 +36,8 @@ const Index = () => {
           <div className="flex items-center space-x-4">
             <Button
               variant="outline"
-              style={{ backgroundColor: "#aec3c3"}}
-              className="border-0 text-black font-medium px-7 py-2 rounded-full text-lg shadow-none hover:shadow-lg hover:bg-[#aec3c3]"
+              style={{ backgroundColor: "#aec3c3" }}
+              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none hover:shadow-lg hover:bg-[#aec3c3]"
             >
               Log in
             </Button>
@@ -57,4 +57,3 @@ const Index = () => {
   );
 };
 export default Index;
-
