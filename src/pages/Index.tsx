@@ -1,8 +1,7 @@
-
 const Index = () => {
   return <div className="min-h-screen bg-white px-[10px] py-[10px]">
       {/* Top container with navigation bar */}
-      <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl">
+      <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between">
           {/* Logo or Brand Name */}
           <span className="text-xl font-bold text-white drop-shadow-sm">MyApp</span>
