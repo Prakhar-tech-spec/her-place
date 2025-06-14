@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -66,29 +67,39 @@ const Index = () => {
       </div>
       {/* Secondary container fills the remaining visible screen */}
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        <div className="relative w-full h-full flex items-center justify-center overflow-visible">
-          <span
-            className="
-              font-bricolage
-              text-white
-              font-extrabold
-              uppercase
-              pointer-events-none
-              select-none
-              z-10
-              whitespace-nowrap
-              w-[101vw]
-              text-[18vw] md:text-[11.5vw] lg:text-[8vw] xl:text-[6.8vw] 2xl:text-[5.8vw]
-              leading-[0.88]
-              tracking-[-0.07em]
-              text-center
-            "
-            style={{
-              maxWidth: "100vw",
-            }}
-          >
-            FREELANCE
-          </span>
+        <div className="w-full h-full flex items-center justify-center overflow-visible">
+          {/* Text Container */}
+          <div className="flex items-center justify-center w-full px-2 md:px-6 lg:px-12 xl:px-20 h-[min(20vw,200px)] md:h-[min(13vw,150px)] xl:h-[min(10vw,120px)]">
+            <span
+              className="
+                font-bricolage
+                text-white
+                font-extrabold
+                uppercase
+                pointer-events-none
+                select-none
+                z-10
+                text-center
+                w-full
+                leading-[0.95]
+                tracking-[-0.055em]
+                "
+              style={{
+                fontSize: "clamp(2.2rem, 14vw, 10rem)",
+                lineHeight: "1",
+                letterSpacing: "-0.055em",
+                // ensure text never overflows its box
+                width: "100%",
+                display: "block",
+                fontWeight: 900,
+                textShadow:
+                  "0px 2px 8px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
+                // whiteSpace: "nowrap", // let the browser wrap if needed, as in the design
+              }}
+            >
+              FREELANCE
+            </span>
+          </div>
         </div>
       </div>
       {/* The rest of the page remains a white canvas */}
@@ -97,3 +108,4 @@ const Index = () => {
 };
 
 export default Index;
+
