@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -68,8 +67,8 @@ const Index = () => {
       {/* Secondary container fills the remaining visible screen */}
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
         <div className="w-full h-full flex items-center justify-center overflow-visible">
-          {/* Text Container */}
-          <div className="flex items-center justify-center w-full px-2 md:px-6 lg:px-12 xl:px-20 h-[min(20vw,200px)] md:h-[min(13vw,150px)] xl:h-[min(10vw,120px)]">
+          {/* Text Container with left margin aligned to logo */}
+          <div className="flex items-center justify-start w-full h-[min(20vw,200px)] md:h-[min(13vw,150px)] xl:h-[min(10vw,120px)] ml-4 md:ml-8">
             <span
               className="
                 font-bricolage
@@ -79,22 +78,20 @@ const Index = () => {
                 pointer-events-none
                 select-none
                 z-10
-                text-center
+                text-left
                 w-full
-                leading-[0.95]
-                tracking-[-0.055em]
-                "
+                tracking-[-0.065em]
+                leading-[0.97]
+              "
               style={{
-                fontSize: "clamp(2.2rem, 14vw, 10rem)",
-                lineHeight: "1",
-                letterSpacing: "-0.055em",
-                // ensure text never overflows its box
+                fontSize: "clamp(2.5rem, 14vw, 10rem)",
+                lineHeight: "0.97",
+                fontWeight: 900,
+                textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
                 width: "100%",
                 display: "block",
-                fontWeight: 900,
-                textShadow:
-                  "0px 2px 8px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08)",
-                // whiteSpace: "nowrap", // let the browser wrap if needed, as in the design
+                letterSpacing: "-0.065em",
+                // whiteSpace: "nowrap", // let line break if needed
               }}
             >
               FREELANCE
@@ -108,4 +105,3 @@ const Index = () => {
 };
 
 export default Index;
-
