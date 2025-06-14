@@ -73,11 +73,11 @@ const Index = () => {
         </nav>
       </div>
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        {/* "FREELANCE" spanning full width with responsive design */}
+        {/* "FREELANCE" spanning full width with enhanced responsiveness */}
         <div className="w-full flex flex-col">
-          {/* Full width container for FREELANCE text with responsive heights */}
-          <div className="w-full flex items-center h-[120px] xs:h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] xl:h-[220px] 2xl:h-[240px] px-2 sm:px-4 md:px-6 lg:px-8">
-            {/* "FREELANCE" text with comprehensive responsive scaling */}
+          {/* Full width container for FREELANCE text */}
+          <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8">
+            {/* "FREELANCE" text stretches to fill entire width */}
             <div className="w-full overflow-hidden">
               <span
                 className="
@@ -90,18 +90,17 @@ const Index = () => {
                   z-10
                   block
                   text-left
-                  leading-none
+                  leading-tight
                   w-full
-                  whitespace-nowrap
                 "
                 style={{
-                  fontSize: "clamp(2.5rem, 15vw, 8rem)",
-                  lineHeight: 0.9,
+                  fontSize: "clamp(2.5rem, 18vw, 12rem)",
+                  lineHeight: 0.95,
                   fontWeight: 900,
-                  letterSpacing: "-0.02em",
+                  letterSpacing: "clamp(-0.05em, -0.02em, 0em)",
                   textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
                   width: "100%",
-                  transform: "scaleX(1.5)",
+                  transform: "scaleX(clamp(1.1, 1.3, 1.4))",
                   transformOrigin: "left center",
                 }}
               >
