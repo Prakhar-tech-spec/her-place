@@ -73,12 +73,12 @@ const Index = () => {
         </nav>
       </div>
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        {/* "FREELANCE" spanning full width */}
+        {/* "FREELANCE" spanning full width with responsive design */}
         <div className="w-full flex flex-col">
-          {/* Full width container for FREELANCE text */}
-          <div className="w-full flex items-center h-[min(21vw,204px)] md:h-[min(13vw,148px)] xl:h-[min(9vw,110px)] px-4 md:px-8">
-            {/* "FREELANCE" text stretches to fill entire width */}
-            <div className="w-full">
+          {/* Full width container for FREELANCE text with responsive heights */}
+          <div className="w-full flex items-center h-[120px] xs:h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] xl:h-[220px] 2xl:h-[240px] px-2 sm:px-4 md:px-6 lg:px-8">
+            {/* "FREELANCE" text with comprehensive responsive scaling */}
+            <div className="w-full overflow-hidden">
               <span
                 className="
                   font-bricolage
@@ -90,17 +90,18 @@ const Index = () => {
                   z-10
                   block
                   text-left
-                  leading-tight
+                  leading-none
                   w-full
+                  whitespace-nowrap
                 "
                 style={{
-                  fontSize: "clamp(3rem, 20vw, 12rem)",
-                  lineHeight: 0.98,
+                  fontSize: "clamp(2.5rem, 15vw, 8rem)",
+                  lineHeight: 0.9,
                   fontWeight: 900,
                   letterSpacing: "-0.02em",
                   textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
                   width: "100%",
-                  transform: "scaleX(1.2)",
+                  transform: "scaleX(1.5)",
                   transformOrigin: "left center",
                 }}
               >
