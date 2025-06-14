@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -73,19 +72,23 @@ const Index = () => {
             text-white
             font-extrabold
             w-full
-            text-[13vw] md:text-[8vw] lg:text-[7vw]
-            leading-none
-            tracking-[0.05em]
+            text-[15vw] md:text-[9vw] lg:text-[7vw]
+            leading-[0.96] md:leading-[0.93] lg:leading-[0.91]
+            tracking-[0em]
             uppercase
-            px-[2vw] md:px-[6vw] lg:px-[11vw]
-            pt-3 md:pt-6
+            px-0 md:px-[6vw] lg:px-[10vw]
+            pt-5 md:pt-7 lg:pt-9
             text-center
             whitespace-nowrap
             select-none
             pointer-events-none
             z-10
+            scale-x-125 md:scale-x-140 lg:scale-x-150
+            origin-left
           "
-          style={{}}
+          style={{
+            transform: 'scaleX(1.23)',
+          }}
         >
           FREELANCE
         </span>
@@ -96,4 +99,3 @@ const Index = () => {
 };
 
 export default Index;
-
