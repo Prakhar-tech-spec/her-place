@@ -1,4 +1,6 @@
 
+import { Button } from "@/components/ui/button";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col px-[10px] py-[10px]">
@@ -30,6 +32,21 @@ const Index = () => {
               </a>
             </li>
           </ul>
+          {/* Right side buttons */}
+          <div className="flex items-center space-x-4">
+            <Button
+              variant="outline"
+              className="border-black text-black font-medium px-7 py-2 rounded-full text-lg hover:bg-black/5"
+            >
+              Log in
+            </Button>
+            <Button
+              variant="default"
+              className="bg-black text-white font-semibold px-7 py-2 rounded-full text-lg hover:bg-black/90"
+            >
+              Join us
+            </Button>
+          </div>
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
@@ -39,3 +56,4 @@ const Index = () => {
   );
 };
 export default Index;
+
