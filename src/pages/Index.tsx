@@ -6,7 +6,7 @@ const Index = () => {
       <div className="w-full [background-color:#aec3c3] py-4 px-8 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between relative">
           {/* Logo or Brand Name */}
-          <span className="text-xl font-normal text-black drop-shadow-sm">MyApp</span>
+          <span className="text-xl font-bold text-black drop-shadow-sm">HerPlace</span>
           {/* Navigation Links - centered */}
           <ul className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-8">
             <li>
