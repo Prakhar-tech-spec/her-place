@@ -14,9 +14,9 @@ const Index = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] flex flex-col w-full py-1 px-1 md:py-2 md:px-3 lg:px-8 border-4 border-white rounded-2xl transition-all duration-300">
+    <div className="min-h-screen bg-[#f8fafc] flex flex-col w-full py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 border-4 border-white rounded-2xl transition-all duration-300">
       {/* Top navigation bar */}
-      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-5 shadow rounded-t-2xl mx-0">
+      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 shadow rounded-t-2xl mx-0">
         <nav className="flex items-center justify-between relative w-full">
           {/* Logo or Brand Name */}
           <span className="text-xl md:text-2xl font-bold text-black drop-shadow-sm">
@@ -66,7 +66,7 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-5 flex-1 rounded-b-2xl"></div>
+      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl"></div>
       {/* The rest of the page remains a white canvas */}
     </div>
   );
