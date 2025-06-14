@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -36,14 +35,13 @@ const Index = () => {
           <div className="flex items-center space-x-4">
             <Button
               variant="outline"
-              className="border border-black text-black font-medium px-7 py-2 rounded-full text-lg shadow-none bg-[#aec3c3] transition-colors duration-200 hover:bg-black hover:text-white"
+              className="border border-black text-black font-medium px-4 py-1.5 rounded-full text-base shadow-none bg-[#aec3c3] transition-colors duration-200 hover:bg-black hover:text-white"
             >
               Log in
             </Button>
             <Button
               variant="default"
-              className="bg-black text-white font-semibold px-7 py-2 rounded-full text-lg border border-black transition-colors duration-200
-                hover:bg-[#aec3c3] hover:text-black hover:border-black"
+              className="bg-black text-white font-semibold px-4 py-1.5 rounded-full text-base border border-black transition-colors duration-200 hover:bg-[#aec3c3] hover:text-black hover:border-black"
               style={{}}
             >
               Join us
