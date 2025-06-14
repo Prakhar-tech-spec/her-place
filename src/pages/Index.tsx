@@ -66,11 +66,10 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] px-2 md:px-5 flex-1 rounded-b-2xl"></div>
+      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-5 flex-1 rounded-b-2xl"></div>
       {/* The rest of the page remains a white canvas */}
     </div>
   );
 };
 
 export default Index;
-
