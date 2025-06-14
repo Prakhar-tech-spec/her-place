@@ -1,3 +1,4 @@
+
 const Index = () => {
   return <div className="min-h-screen bg-white px-[10px] py-[10px]">
       {/* Top container with navigation bar */}
@@ -25,8 +26,8 @@ const Index = () => {
           </ul>
         </nav>
       </div>
-      {/* Secondary container, same color, under navigation bar */}
-      <div className="w-full [background-color:#aec3c3] py-10 px-8 rounded-none"></div>
+      {/* Secondary container, same color, under navigation bar, with increased height */}
+      <div className="w-full [background-color:#aec3c3] py-20 px-8 rounded-none"></div>
       {/* The rest of the page remains a white canvas */}
     </div>;
 };
