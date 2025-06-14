@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
-import { Menu } from "lucide-react";
+import { Menu, Search, Mic, Star } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -72,45 +72,157 @@ const Index = () => {
           </div>
         </nav>
       </div>
+
+      {/* Main content area */}
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
-        {/* "FREELANCE" spanning full width with enhanced responsiveness */}
-        <div className="w-full flex flex-col pt-8 md:pt-12 lg:pt-16">
-          {/* Full width container for FREELANCE text */}
-          <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8">
-            {/* "FREELANCE" text stretches to fill entire width */}
-            <div className="w-full overflow-hidden">
-              <span
-                className="
-                  font-bricolage
-                  text-white
-                  font-extrabold
-                  uppercase
-                  select-none
-                  pointer-events-none
-                  z-10
-                  block
-                  text-left
-                  leading-tight
-                  w-full
-                "
-                style={{
-                  fontSize: "clamp(2.5rem, 18vw, 12rem)",
-                  lineHeight: 0.95,
-                  fontWeight: 900,
-                  letterSpacing: "clamp(-0.05em, -0.02em, 0em)",
-                  textShadow: "0px 2px 8px rgba(0,0,0,0.11), 0 1px 3px rgba(0,0,0,0.09)",
-                  width: "100%",
-                  transform: "scaleX(clamp(1.1, 1.3, 1.4))",
-                  transformOrigin: "left center",
-                }}
-              >
-                FREELANCE
-              </span>
+        {/* Hero section with FREELANCE text and content */}
+        <div className="relative w-full h-full">
+          {/* "FREELANCE" background text */}
+          <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12 lg:pt-16">
+            <span
+              className="
+                font-bricolage
+                text-white
+                font-extrabold
+                uppercase
+                select-none
+                pointer-events-none
+                z-10
+                leading-tight
+                opacity-90
+              "
+              style={{
+                fontSize: "clamp(4rem, 22vw, 16rem)",
+                lineHeight: 0.9,
+                fontWeight: 900,
+                letterSpacing: "clamp(-0.08em, -0.05em, -0.02em)",
+                textShadow: "0px 2px 8px rgba(0,0,0,0.15)",
+              }}
+            >
+              FREELANCE
+            </span>
+          </div>
+
+          {/* Content overlay */}
+          <div className="relative z-20 w-full h-full flex flex-col lg:flex-row items-center justify-between px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-16">
+            {/* Left side content */}
+            <div className="flex-1 max-w-lg lg:max-w-xl space-y-6 lg:pr-8">
+              {/* Main headline */}
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black leading-tight">
+                Find the perfect freelance services for your business
+              </h1>
+
+              {/* Search bar */}
+              <div className="relative">
+                <div className="flex items-center bg-white rounded-full shadow-lg overflow-hidden">
+                  <div className="flex items-center px-4 py-3 flex-1">
+                    <Search className="w-5 h-5 text-gray-500 mr-3" />
+                    <input
+                      type="text"
+                      placeholder="Search for any services..."
+                      className="flex-1 outline-none text-gray-700 placeholder-gray-500"
+                    />
+                    <Mic className="w-5 h-5 text-gray-500 ml-3" />
+                  </div>
+                  <Button className="bg-black text-white rounded-full px-6 py-3 m-1 hover:bg-gray-800">
+                    <Search className="w-5 h-5" />
+                  </Button>
+                </div>
+              </div>
+
+              {/* Popular skills */}
+              <div className="space-y-3">
+                <p className="text-sm text-gray-700 font-medium">Popular skills:</p>
+                <div className="flex flex-wrap gap-2">
+                  {['web design', 'ui/ux design', 'databases', 'business cards'].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 bg-white/80 text-gray-700 text-sm rounded-full border border-gray-200 hover:bg-white transition-colors cursor-pointer"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Service description */}
+              <div className="bg-white/90 rounded-2xl p-6 backdrop-blur-sm shadow-lg">
+                <p className="text-gray-700 leading-relaxed">
+                  A freelance service web portal connects businesses with freelancers, facilitating project collaboration and hiring.
+                </p>
+              </div>
+            </div>
+
+            {/* Right side - Woman image and cards */}
+            <div className="relative flex-1 flex items-center justify-center lg:justify-end mt-8 lg:mt-0">
+              {/* Woman with laptop image */}
+              <div className="relative">
+                <img
+                  src="/lovable-uploads/d93ba316-dfa0-4b80-b3bc-7692737d3906.png"
+                  alt="Woman working on laptop"
+                  className="w-full max-w-md lg:max-w-lg h-auto object-contain"
+                />
+
+                {/* Discover more badge */}
+                <div className="absolute top-4 right-4 bg-white rounded-full p-3 shadow-lg">
+                  <div className="w-12 h-12 bg-[#aec3c3] rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                      <div className="w-2 h-2 bg-[#aec3c3] rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating cards */}
+              <div className="absolute -left-4 top-1/2 transform -translate-y-1/2">
+                {/* Trusted Freelancers card */}
+                <div className="bg-white rounded-2xl p-4 shadow-lg mb-4 w-64">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-semibold text-gray-800">Trusted Freelancers</h3>
+                    <div className="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-current" />
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex -space-x-2">
+                      {[...Array(6)].map((_, i) => (
+                        <div key={i} className="w-8 h-8 bg-gray-300 rounded-full border-2 border-white"></div>
+                      ))}
+                    </div>
+                    <div className="text-right">
+                      <p className="font-bold text-gray-800">200+</p>
+                      <p className="text-xs text-gray-500">Satisfied Customers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Jenny profile card */}
+              <div className="absolute -right-4 bottom-1/4 bg-white rounded-2xl p-4 shadow-lg w-64">
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-gray-300 rounded-full"></div>
+                  <div>
+                    <p className="font-semibold text-gray-800">@jenny</p>
+                    <p className="text-sm text-gray-500">UI/Ux Designer</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-gray-600">
+                    <div className="w-4 h-4 bg-gray-300 rounded mr-2"></div>
+                    <span>80+ projects completed</span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <div className="w-4 h-4 bg-gray-300 rounded mr-2"></div>
+                    <span>$30 per hour</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* The rest of the page remains a white canvas */}
     </div>
   );
 };
