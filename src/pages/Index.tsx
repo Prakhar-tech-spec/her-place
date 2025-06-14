@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import NavLinks from "@/components/NavLinks";
 import { Menu } from "lucide-react";
@@ -66,10 +65,10 @@ const Index = () => {
         </nav>
       </div>
       {/* Secondary container fills the remaining visible screen */}
-      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl flex items-center justify-center">
+      <div className="w-full [background-color:#aec3c3] py-2 px-2 md:py-3 md:px-3 lg:py-4 lg:px-4 flex-1 rounded-b-2xl relative">
         <span
-          className="text-[9vw] md:text-[7vw] lg:text-[6vw] font-extrabold tracking-widest text-black uppercase w-full text-center whitespace-nowrap select-none"
-          style={{ letterSpacing: "0.2em" }}
+          className="absolute left-0 right-0 pt-8 text-[9vw] md:text-[7vw] lg:text-[6vw] font-extrabold tracking-widest text-white uppercase w-full text-center whitespace-nowrap select-none"
+          style={{ letterSpacing: "0.2em", top: 0 }}
         >
           FREELANCE
         </span>
@@ -80,4 +79,3 @@ const Index = () => {
 };
 
 export default Index;
-
