@@ -74,7 +74,7 @@ const Index = () => {
       </div>
       <div className="relative flex-1 w-full [background-color:#aec3c3] py-0 px-0 md:py-0 md:px-0 lg:py-0 lg:px-0 rounded-b-2xl overflow-visible">
         {/* "FREELANCE" spanning full width with enhanced responsiveness */}
-        <div className="w-full flex flex-col">
+        <div className="w-full flex flex-col pt-8 md:pt-12 lg:pt-16">
           {/* Full width container for FREELANCE text */}
           <div className="w-full flex items-center h-[min(25vw,220px)] sm:h-[min(22vw,200px)] md:h-[min(15vw,160px)] lg:h-[min(12vw,130px)] xl:h-[min(10vw,120px)] 2xl:h-[min(8vw,110px)] px-2 sm:px-4 md:px-6 lg:px-8">
             {/* "FREELANCE" text stretches to fill entire width */}
