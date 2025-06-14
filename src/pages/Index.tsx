@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -8,29 +9,31 @@ const Index = () => {
         <nav className="flex items-center justify-between relative">
           {/* Logo or Brand Name */}
           <span className="text-xl font-bold text-black drop-shadow-sm">HerPlace</span>
-          {/* Navigation Links - centered */}
-          <ul className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-8">
-            <li>
-              <a href="#" className="text-black font-normal hover:underline">
-                Find freelancers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-black font-normal hover:underline">
-                Find Jobs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-black font-normal hover:underline">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-black font-normal hover:underline">
-                Solutions
-              </a>
-            </li>
-          </ul>
+          {/* Navigation Links - centered in a container */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex">
+            <ul className="flex space-x-8">
+              <li>
+                <a href="#" className="text-black font-normal hover:underline">
+                  Find freelancers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-black font-normal hover:underline">
+                  Find Jobs
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-black font-normal hover:underline">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-black font-normal hover:underline">
+                  Solutions
+                </a>
+              </li>
+            </ul>
+          </div>
           {/* Right side buttons */}
           <div className="flex items-center space-x-4">
             <Button
@@ -57,3 +60,4 @@ const Index = () => {
 };
 
 export default Index;
+
